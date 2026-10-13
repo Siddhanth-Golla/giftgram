@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Personalized Gifts & Keepsakes | Giftgram</title>
+  <meta name="description" content="Browse our complete collection of handcrafted personalized photo frames, graduation standees, memory collages, and sweet keepsake boxes. Direct WhatsApp ordering at 6362003060.">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>✨ Free aesthetic gift packaging & handwritten note • Order directly on WhatsApp: <strong>6362003060</strong> ✨</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo">
+        <img src="./assets/images/logo.png" alt="Giftgram Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">Gift<span>gram</span></span>
+          <span class="brand-tagline">Handmade Gift Shop</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html" class="active">All Gifts</a></li>
+        <li><a href="./products.html?category=frames">Photo Frames</a></li>
+        <li><a href="./products.html?category=handmade">Handmade Gifts</a></li>
+        <li><a href="./products.html?category=keepsakes">Custom Keepsakes</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/916362003060?text=Hi%20Giftgram!%20%F0%9F%8C%B8%20I%20would%20like%20to%20enquire%20about%20ordering%20a%20custom%20gift." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" style="display: inline-flex; align-items: center; gap: 6px; font-weight: 700; padding: 10px 20px;">
+          <span>💬</span> Chat on WhatsApp
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header style="background: var(--bg-secondary); padding: 50px 0 35px; border-bottom: 1px solid var(--border-color); text-align: center;">
+    <div class="container">
+      <span class="section-tag">Boutique Collection</span>
+      <h1 class="section-title" style="margin-bottom: 10px;">Our Gift Collection</h1>
+      <p class="section-desc" style="max-width: 580px; margin: 0 auto;">
+        Discover thoughtfully handcrafted gifts customized with your favorite photographs, memorable dates, and heartfelt messages. Click any gift to connect on WhatsApp!
+      </p>
+    </div>
+  </header>
+
+  <!-- Main Catalogue Section -->
+  <main class="section" style="padding-top: 40px;">
+    <div class="container">
+
+      <!-- Category Filter Pills (3 Categories + All Gifts) -->
+      <div class="category-pills" id="category-pills-container">
+        <!-- Injected via js/products.js -->
+      </div>
+
+      <!-- Search & Sort Controls -->
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 34px; padding: 16px 20px; background: #fff; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+        <div style="position: relative; flex-grow: 1; max-width: 380px;">
+          <input type="text" id="search-input" class="form-control" placeholder="Search by gift name or style..." style="padding-left: 38px;">
+          <span style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-muted);">🔍</span>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <span id="product-count" style="font-size: 0.88rem; color: var(--text-secondary); font-weight: 500;">
+            Showing gifts...
+          </span>
+          <select id="sort-select" class="form-control" style="width: auto; padding: 9px 16px;">
+            <option value="newest">Featured & Bestsellers</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="product-grid" id="products-grid">
+        <!-- Rendered dynamically by js/products.js -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="brand-name">Gift<span>gram</span></span>
+            <span class="brand-tagline">Gifts Made Personal</span>
+          </div>
+          <p>Handmade custom gifts created with love and premium craftsmanship to turn life's most precious memories into forever keepsakes.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="./products.html">All Gifts</a></li>
+            <li><a href="./products.html?category=frames">Photo Frames</a></li>
+            <li><a href="./products.html?category=handmade">Handmade Gifts</a></li>
+            <li><a href="./products.html?category=keepsakes">Custom Keepsakes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Help & Support</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/916362003060" target="_blank">Chat on WhatsApp (6362003060)</a></li>
+            <li><a href="https://instagram.com/_giftgram_" target="_blank">Instagram Wall</a></li>
+            <li><a href="./manage-products.html">Product Manager (Add Gifts)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Need Custom Ideas?</h4>
+          <p style="font-size: 0.88rem; color: #B4A8A6; margin-bottom: 14px;">Have a bespoke gifting idea not listed in our catalog? Chat directly with our artisan on WhatsApp.</p>
+          <a href="https://wa.me/916362003060?text=Hi%20Giftgram!%20%F0%9F%8C%B8%20I%20have%20a%20bespoke%20gifting%20idea." target="_blank" class="btn btn-sm btn-primary">Chat on WhatsApp 💬</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Giftgram. All rights reserved. Handcrafted with love.</div>
+        <div>Fast Delivery Across India 🇮🇳 • WhatsApp: 6362003060</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/products-data.js"></script>
+  <script src="./js/products-manager.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/products.js"></script>
+</body>
+</html>

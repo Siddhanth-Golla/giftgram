@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giftgram | Gifts Made Personal - Custom & Handmade Keepsakes</title>
+  <meta name="description" content="Thoughtful, personalized gifts made specially for the people who matter. Personalized photo frames, graduation standees, memory collages, and handmade gift boxes.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Giftgram | Gifts Made Personal">
+  <meta property="og:description" content="Thoughtful, personalized gifts made specially for the people who matter. Order via WhatsApp on 6362003060.">
+  <meta property="og:type" content="website">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>✨ Free aesthetic gift packaging & handwritten note • Order directly on WhatsApp: <strong>6362003060</strong> ✨</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo">
+        <img src="./assets/images/logo.png" alt="Giftgram Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">Gift<span>gram</span></span>
+          <span class="brand-tagline">Handmade Gift Shop</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./products.html">All Gifts</a></li>
+        <li><a href="./products.html?category=frames">Photo Frames</a></li>
+        <li><a href="./products.html?category=handmade">Handmade Gifts</a></li>
+        <li><a href="./products.html?category=keepsakes">Custom Keepsakes</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/916362003060?text=Hi%20Giftgram!%20%F0%9F%8C%B8%20I%20would%20like%20to%20enquire%20about%20ordering%20a%20custom%20gift." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" style="display: inline-flex; align-items: center; gap: 6px; font-weight: 700; padding: 10px 20px;">
+          <span>💬</span> Chat on WhatsApp
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🌸</span> Handcrafted with Love & Care
+        </div>
+        <h1 class="hero-title">
+          Gifts made<br><em>personal.</em>
+        </h1>
+        <p class="hero-subtitle">
+          Thoughtful, personalized gifts made specially for the people who matter. Celebrate love, milestones, and shared memories with keepsakes designed to last a lifetime.
+        </p>
+        <div class="hero-cta-group">
+          <a href="./products.html" class="btn btn-primary btn-lg">
+            Explore Collection →
+          </a>
+          <a href="https://wa.me/916362003060?text=Hi%20Giftgram!%20%F0%9F%8C%B8%20I%20would%20like%20to%20order%20a%20customized%20gift." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg" style="display: inline-flex; align-items: center; gap: 8px;">
+            <span>💬</span> Order via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-stack">
+        <div class="hero-card-main">
+          <img src="./assets/images/products/memory-collage-frame.jpg" alt="Custom Memory Collage Frame" onerror="handleImageError(this)">
+          <div style="padding: 10px 6px 4px; text-align: center;">
+            <div style="font-family: var(--font-serif); font-size: 1.05rem; font-weight: 600;">Custom Memory Collage Frame</div>
+            <div style="font-size: 0.8rem; color: var(--accent-rose); font-weight: 600; margin-top: 2px;">Handmade with Love</div>
+          </div>
+        </div>
+        <div class="hero-card-secondary">
+          <img src="./assets/images/products/polaroid-mini-frame.jpg" alt="Mini Retro Polaroid Keepsake" onerror="handleImageError(this)">
+          <div style="padding: 6px 2px 2px; text-align: center;">
+            <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-primary);">Retro Polaroid</div>
+            <div style="font-size: 0.75rem; color: var(--accent-rose); font-weight: 600;">₹249</div>
+          </div>
+        </div>
+        <div class="hero-tag-floating">
+          <span>✨</span> Handcrafted in India
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categories Showcase (3 Clean Categories) -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curated Collections</span>
+        <h2 class="section-title">Gifts for Every Celebration</h2>
+        <p class="section-desc">Browse our curated handmade collections and find the perfect personalized keepsake</p>
+      </div>
+
+      <div class="category-pills" id="home-category-pills">
+        <a href="./products.html?category=all" class="category-pill active">✨ All Gifts</a>
+        <a href="./products.html?category=frames" class="category-pill">🖼️ Photo Frames</a>
+        <a href="./products.html?category=handmade" class="category-pill">🎀 Handmade Gifts</a>
+        <a href="./products.html?category=keepsakes" class="category-pill">💫 Custom Keepsakes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="section" id="featured-section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Handpicked For You</span>
+        <h2 class="section-title">Featured Keepsakes</h2>
+        <p class="section-desc">Click any gift to chat with us on WhatsApp or view full details</p>
+      </div>
+
+      <div class="product-grid" id="home-featured-grid">
+        <!-- Injected via JavaScript from ProductsManager -->
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="./products.html" class="btn btn-secondary btn-lg">Explore Full Catalog →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Giftgram Section -->
+  <section class="section why-giftgram">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Giftgram Difference</span>
+        <h2 class="section-title">Why Giftgram?</h2>
+        <p class="section-desc">We pour our hearts into every tiny detail so your loved ones feel truly special</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon-wrap">🎨</div>
+          <h3 class="feature-title">Handmade With Love</h3>
+          <p class="feature-desc">Every keepsake is individually designed, laser-crafted, and assembled by our artisans.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">✨</div>
+          <h3 class="feature-title">Personalized Just For You</h3>
+          <p class="feature-desc">Custom photographs, memorable dates, and heartfelt messages tailored to your story.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">🎁</div>
+          <h3 class="feature-title">Aesthetic Packaging</h3>
+          <p class="feature-desc">Every piece arrives wrapped in delicate blush paper with a personalized handwritten wax-sealed note.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">💬</div>
+          <h3 class="feature-title">Direct WhatsApp Support</h3>
+          <p class="feature-desc">Connect directly with our artisan on WhatsApp (6362003060) to preview designs before crafting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Loved by 500+ Customers</span>
+        <h2 class="section-title">Heartfelt Words</h2>
+        <p class="section-desc">Real stories and smiles created by our handcrafted keepsakes</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Ordered the Vogue Style magazine frame for my best friend's birthday. The print quality and delicate pink packaging brought actual tears to her eyes!"</p>
+          <div class="review-author">
+            <span class="author-avatar">🌸</span>
+            <div>
+              <div class="author-name">Ananya Sharma</div>
+              <div class="author-location">Bangalore</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The mini polaroid keepsake is so aesthetic! The WhatsApp ordering was effortless, and the artisan kept me updated throughout the crafting process."</p>
+          <div class="review-author">
+            <span class="author-avatar">✨</span>
+            <div>
+              <div class="author-name">Rohan & Sneha</div>
+              <div class="author-location">Mumbai</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The memory collage frame became the centerpiece of our anniversary celebration. Thank you Giftgram for capturing our moments so beautifully!"</p>
+          <div class="review-author">
+            <span class="author-avatar">💖</span>
+            <div>
+              <div class="author-name">Kavya Patel</div>
+              <div class="author-location">Ahmedabad</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram / Gallery Section -->
+  <section class="section gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Follow Our Story</span>
+        <h2 class="section-title">@_giftgram_ on Instagram</h2>
+        <p class="section-desc">Handmade Gift Shop • Follow us <a href="https://instagram.com/_giftgram_" target="_blank" style="color: var(--accent-rose); font-weight: 600; text-decoration: underline;">@_giftgram_</a></p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./assets/images/products/memory-collage-frame.jpg" alt="Giftgram Instagram 1" onerror="handleImageError(this)">
+          <div class="gallery-overlay">📷</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/products/polaroid-mini-frame.jpg" alt="Giftgram Instagram 2" onerror="handleImageError(this)">
+          <div class="gallery-overlay">📷</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/products/sweet-love-tin-box.jpg" alt="Giftgram Instagram 3" onerror="handleImageError(this)">
+          <div class="gallery-overlay">📷</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/products/vogue-birthday-magazine-frame.jpg" alt="Giftgram Instagram 4" onerror="handleImageError(this)">
+          <div class="gallery-overlay">📷</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/products/graduation-acrylic-standee.jpg" alt="Giftgram Instagram 5" onerror="handleImageError(this)">
+          <div class="gallery-overlay">📷</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/products/polaroid-mini-frame.jpg" alt="Giftgram Instagram 6" onerror="handleImageError(this)">
+          <div class="gallery-overlay">📷</div>
+        </div>
+      </div>
+
+      <!-- Call to Action Banner -->
+      <div class="cta-banner">
+        <h2 class="cta-title">Make someone's day a little more special.</h2>
+        <p class="cta-desc">Choose from our handcrafted personalized frames, mini polaroids, and milestone keepsakes.</p>
+        <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+          <a href="./products.html" class="btn btn-primary btn-lg">Explore Gifts Now</a>
+          <a href="https://wa.me/916362003060?text=Hi%20Giftgram!%20%F0%9F%8C%B8%20I%20want%20to%20order%20a%20gift." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg" style="display: inline-flex; align-items: center; gap: 6px;">
+            <span>💬</span> WhatsApp (6362003060)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <img src="./assets/images/logo.png" alt="Giftgram Logo" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-name">Gift<span>gram</span></span>
+              <span class="brand-tagline">Handmade Gift Shop</span>
+            </div>
+          </div>
+          <p>Handmade custom gifts created with love and premium craftsmanship to turn life's most precious memories into forever keepsakes.</p>
+          <div style="margin-top: 14px; font-size: 0.85rem;">
+            <span>📸 Instagram: </span>
+            <a href="https://instagram.com/_giftgram_" target="_blank" style="color: var(--accent-rose); font-weight: 600;">@_giftgram_</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="./products.html">All Gifts</a></li>
+            <li><a href="./products.html?category=frames">Photo Frames</a></li>
+            <li><a href="./products.html?category=handmade">Handmade Gifts</a></li>
+            <li><a href="./products.html?category=keepsakes">Custom Keepsakes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">WhatsApp Order Help</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/916362003060" target="_blank">Chat on WhatsApp (6362003060)</a></li>
+            <li><a href="https://instagram.com/_giftgram_" target="_blank">Instagram Wall</a></li>
+            <li><a href="./manage-products.html">Manage Products</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Handmade With Love</h4>
+          <p style="font-size: 0.85rem; color: #B4A8A6; margin-bottom: 12px;">Every gift is handcrafted individually with personal care. To order, simply click any product to connect directly on WhatsApp!</p>
+          <a href="https://wa.me/916362003060?text=Hi%20Giftgram!%20%F0%9F%8C%B8%20I%20have%20a%20question%20about%20your%20gifts." target="_blank" class="btn btn-sm btn-primary">Chat on WhatsApp 💬</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Giftgram. All rights reserved. Handcrafted in India.</div>
+        <div>Personalized Gifts • Photo Frames • Keepsakes • WhatsApp: 6362003060</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/products-data.js"></script>
+  <script src="./js/products-manager.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('home-featured-grid');
+      if (!grid) return;
+
+      const products = ProductsManager.getAll().slice(0, 4);
+      grid.innerHTML = products.map(p => {
+        const waUrl = ProductsManager.getWhatsAppLink(p);
+        return `
+          <article class="product-card" data-id="${p.id}">
+            <div class="product-card-image-wrap">
+              <a href="product-details.html?id=${p.id}">
+                <img src="${p.image}" alt="${p.name}" onerror="handleImageError(this)">
+              </a>
+              <div class="product-badge-group">
+                ${p.bestseller ? '<span class="badge badge-bestseller">Best Seller</span>' : ''}
+                <span class="badge badge-custom">Personalized</span>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-label">${p.category || 'Handmade Gift'}</span>
+              <h3 class="product-title"><a href="product-details.html?id=${p.id}">${p.name}</a></h3>
+              <p class="product-short-desc">${p.description || 'Personalized handcrafted keepsake made with love.'}</p>
+              <div class="product-card-footer" style="flex-wrap: wrap; gap: 8px; margin-top: 14px;">
+                <span class="product-price">${ProductsManager.formatPrice(p.price)}</span>
+                <div style="display: flex; gap: 6px; width: 100%; margin-top: 6px;">
+                  <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="flex: 1; justify-content: center; font-size: 0.82rem; padding: 9px 10px; background: #25D366; border-color: #25D366; color: #FFFFFF;" title="Ask questions or order this product on WhatsApp">
+                    <span style="font-size: 1rem;">💬</span> WhatsApp
+                  </a>
+                  <a href="product-details.html?id=${p.id}" class="btn btn-secondary btn-sm" style="flex: 1; justify-content: center; font-size: 0.82rem; padding: 9px 10px;">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    });
+  </script>
+</body>
+</html>

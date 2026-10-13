@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Details | Giftgram</title>
+  <meta name="description" content="Personalize your handcrafted keepsake gift with custom text, dates, and uploaded photos. Order directly on WhatsApp: 6362003060.">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>✨ Free aesthetic gift packaging & handwritten note • Order directly on WhatsApp: <strong>6362003060</strong> ✨</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo">
+        <img src="./assets/images/logo.png" alt="Giftgram Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">Gift<span>gram</span></span>
+          <span class="brand-tagline">Handmade Gift Shop</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html" class="active">All Gifts</a></li>
+        <li><a href="./products.html?category=frames">Photo Frames</a></li>
+        <li><a href="./products.html?category=handmade">Handmade Gifts</a></li>
+        <li><a href="./products.html?category=keepsakes">Custom Keepsakes</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/916362003060?text=Hi%20Giftgram!%20%F0%9F%8C%B8%20I%20would%20like%20to%20enquire%20about%20ordering%20a%20custom%20gift." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" style="display: inline-flex; align-items: center; gap: 6px; font-weight: 700; padding: 10px 20px;">
+          <span>💬</span> Chat on WhatsApp
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product Details Section -->
+  <main class="product-details-wrap" id="product-detail-container">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <a href="./index.html">Home</a>
+        <span>›</span>
+        <a href="./products.html">Gifts</a>
+        <span>›</span>
+        <span id="breadcrumb-product-name" style="color: var(--text-primary); font-weight: 500;">Gift Details</span>
+      </div>
+
+      <!-- Main Product Grid -->
+      <div class="product-detail-grid">
+        
+        <!-- Left: Image Showcase -->
+        <div class="gallery-showcase">
+          <div class="main-image-frame">
+            <img id="main-product-image" src="" alt="Product image" onerror="handleImageError(this)">
+          </div>
+        </div>
+
+        <!-- Right: Details & WhatsApp Action -->
+        <div class="product-info-wrap">
+          <div class="product-meta-header">
+            <div class="detail-badge-row">
+              <span class="product-category-label" id="product-category">Handmade Keepsake</span>
+              <span class="prep-time-badge" id="product-prep-time">⏳ 2-3 Business Days Crafting</span>
+            </div>
+            <h1 class="detail-title" id="product-title">Loading Gift Details...</h1>
+            <div class="detail-price" id="product-price">₹0</div>
+          </div>
+
+          <div class="detail-description" id="product-description">
+            <p>Loading description...</p>
+          </div>
+
+          <!-- Product Direct WhatsApp Ordering Card -->
+          <div class="enquiry-card-wrapper" style="margin: 24px 0 0 0; padding: 28px 24px; border-radius: var(--radius-xl); background: #FFFFFF; border: 1.5px solid var(--border-color); box-shadow: 0 10px 30px rgba(181, 30, 73, 0.08);">
+            
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; border-bottom: 1px solid var(--border-color); padding-bottom: 14px;">
+              <div>
+                <span class="section-tag" style="background: var(--accent-blush); color: var(--accent-rose-dark); margin-bottom: 4px; font-size: 0.76rem;">🌸 1-Click WhatsApp Ordering</span>
+                <h3 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--text-primary); margin-top: 4px;">Order or Ask Questions</h3>
+                <p style="font-size: 0.84rem; color: var(--text-secondary); margin-top: 2px;">Chat directly with our artisan on WhatsApp</p>
+              </div>
+              <div style="text-align: right; background: var(--bg-primary); padding: 8px 16px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 0.05em; display: block;">Price</span>
+                <span id="form-product-price-badge" style="font-size: 1.35rem; font-weight: 800; color: var(--accent-rose);">₹0</span>
+              </div>
+            </div>
+
+            <!-- Optional customization notes for WhatsApp message -->
+            <div class="form-group" style="margin-bottom: 18px;">
+              <label for="custom-notes-input" style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary); display: block; margin-bottom: 6px;">
+                Personalization Notes / Special Requests (Optional):
+              </label>
+              <textarea id="custom-notes-input" rows="2" class="form-control" placeholder="e.g. Add names Rahul & Anjali, anniversary date 24 Oct, and best photo"></textarea>
+              <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">
+                💡 You can send your high-resolution photos directly in the WhatsApp chat after clicking!
+              </div>
+            </div>
+
+            <!-- Prominent WhatsApp Button -->
+            <button id="product-whatsapp-submit-btn" class="btn btn-primary btn-lg" style="width: 100%; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; background: #25D366; border-color: #25D366; color: #FFFFFF; font-size: 1.05rem;">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="#FFFFFF">
+                <path d="M16.01 3C8.83 3 3 8.82 3 16c0 2.45.69 4.74 1.88 6.7L3.6 28.4l5.88-1.25A12.9 12.9 0 0 0 16 29c7.18 0 13.01-5.82 13.01-13S23.19 3 16.01 3zm7.61 18.23c-.32.9-1.85 1.74-2.58 1.81-.68.07-1.57.1-4.73-1.21-3.79-1.57-6.22-5.43-6.41-5.69-.19-.25-1.55-2.07-1.55-3.95 0-1.88.98-2.8 1.33-3.18.35-.38.77-.48 1.03-.48.26 0 .51.01.74.02.24.01.56-.09.87.66.32.77 1.09 2.66 1.19 2.85.1.19.16.42.03.67-.13.26-.2.41-.39.63-.19.22-.41.49-.59.66-.2.19-.41.4-.18.79.23.39 1.02 1.68 2.18 2.72 1.5 1.33 2.76 1.74 3.15 1.93.39.19.62.16.85-.1.23-.26.98-1.14 1.24-1.53.26-.39.51-.32.86-.19.35.13 2.22 1.05 2.6 1.24.38.19.64.29.74.45.09.16.09.93-.23 1.83z"/>
+              </svg>
+              <span>Chat on WhatsApp to Order (6362003060)</span>
+            </button>
+
+            <!-- Artisan Assurance Note -->
+            <div style="margin-top: 14px; text-align: center; font-size: 0.8rem; color: var(--text-secondary);">
+              🔒 Safe & Direct Communication • Instant confirmation & photo review via WhatsApp
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <img src="./assets/images/logo.png" alt="Giftgram Logo" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-name">Gift<span>gram</span></span>
+              <span class="brand-tagline">Handmade Gift Shop</span>
+            </div>
+          </div>
+          <p>Handmade custom gifts created with love and premium craftsmanship to turn life's most precious memories into forever keepsakes.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="./products.html">All Gifts</a></li>
+            <li><a href="./products.html?category=frames">Photo Frames</a></li>
+            <li><a href="./products.html?category=handmade">Handmade Gifts</a></li>
+            <li><a href="./products.html?category=keepsakes">Custom Keepsakes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">WhatsApp Order Help</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/916362003060" target="_blank">Chat on WhatsApp (6362003060)</a></li>
+            <li><a href="https://instagram.com/_giftgram_" target="_blank">Instagram Wall</a></li>
+            <li><a href="./manage-products.html">Manage Products</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Giftgram Promise</h4>
+          <p style="font-size: 0.88rem; color: #B4A8A6;">Every gift is crafted with personal care. To order, click the WhatsApp button above to chat directly with our artisan at 6362003060.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Giftgram. All rights reserved. Handcrafted in India.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/products-data.js"></script>
+  <script src="./js/products-manager.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/product-details.js"></script>
+</body>
+</html>
