@@ -33,7 +33,7 @@ const DEFAULT_PRODUCTS = [
     id: 1,
     name: "Personalized Mini Retro Polaroid Keepsake",
     category: "Photo Frames",
-    price: 249,
+    price: 30 "/ piece",
     image: "assets/images/products/polaroid-mini-frame.jpg",
     description: "A nostalgic retro polaroid keepsake with your custom photograph and meaningful caption. Perfectly sized for wallets, study desks, or bedside displays.",
     bestseller: true
